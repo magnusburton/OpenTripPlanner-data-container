@@ -1,0 +1,39 @@
+{
+  "modeWeight": {
+      "BUS": 1.2,
+      "SUBWAY": 0.9,
+      "RAIL": 0.95
+  },
+  "routingDefaults": {
+      "walkSpeed": 1.3,
+      "transferSlack": 120,
+      "maxTransfers": 4,
+      "waitReluctance": 0.95,
+      "waitAtBeginningFactor": 0.7,
+      "walkReluctance": 1.75,
+      "stairsReluctance": 1.65,
+      "walkBoardCost": 540,
+      "walkOnStreetReluctance": 1.5,
+      "carParkCarLegWeight": 2,
+      "itineraryFiltering": 2.0,
+      "maxSlope": 0.125
+  },
+  "routePreferenceSettings": "SL",
+  "updaters": [
+    {
+      "id": "sl-alerts",
+      "type": "real-time-alerts",
+      "frequencySec": 30,
+      "url": "https://opendata.samtrafiken.se/gtfs-rt/sl/ServiceAlerts.pb?key=88a5722e21a146a380eeda76d042c28f",
+      "feedId": "SL",
+      "fuzzyTripMatching": true
+    },
+    {
+      "type": "stop-time-updater",
+      "frequencySec": 30,
+      "sourceType": "gtfs-http",
+      "url": "https://opendata.samtrafiken.se/gtfs-rt/sl/TripUpdates.pb?key=88a5722e21a146a380eeda76d042c28f",
+      "feedId": "SL"
+    }
+  ]
+}

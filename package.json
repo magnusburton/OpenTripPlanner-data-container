@@ -1,21 +1,21 @@
 {
   "name": "otp-data-builder",
   "version": "1.0.0",
-  "description": "[![Build](https://api.travis-ci.org/HSLdevcom/OpenTripPlanner-data-container.svg?branch=master)](https://travis-ci.org/HSLdevcom/OpenTripPlanner-data-container)",
+  "description": "[![Build](https://api.travis-ci.org/magnusburton/OpenTripPlanner-data-container.svg?branch=master)](https://travis-ci.org/magnusburton/OpenTripPlanner-data-container)",
   "main": "gulpfile.js",
   "scripts": {
     "test": "node_modules/.bin/standard"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HSLdevcom/OpenTripPlanner-data-container.git"
+    "url": "git+https://github.com/magnusburton/OpenTripPlanner-data-container.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HSLdevcom/OpenTripPlanner-data-container/issues"
+    "url": "https://github.com/magnusburton/OpenTripPlanner-data-container/issues"
   },
-  "homepage": "https://github.com/HSLdevcom/OpenTripPlanner-data-container#readme",
+  "homepage": "https://github.com/magnusburton/OpenTripPlanner-data-container#readme",
   "dependencies": {
     "@slack/client": "^4.8.0",
     "async": "^2.5.0",

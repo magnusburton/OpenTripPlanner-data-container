@@ -16,12 +16,8 @@ function shutdown() {
 }
 
 echo "Making sure there are no old test containers or image available"
-docker stop otp-data-finland || true
-docker stop otp-finland || true
-docker stop otp-data-waltti || true
-docker stop otp-waltti || true
-docker stop otp-data-hsl || true
-docker stop otp-hsl || true
+docker stop otp-data-sl || true
+docker stop otp-sl || true
 docker rmi --force $DOCKER_IMAGE || true
 cd data/build/$ROUTER_NAME
 echo "Building data-container image..."
